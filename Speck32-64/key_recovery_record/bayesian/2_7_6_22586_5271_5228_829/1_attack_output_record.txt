@@ -1,0 +1,946 @@
+cur t is  0
+the number of surviving sk_r+1_[7~0] is  14
+the number of surviving sk_r+1_ is  69
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+cur t is  1
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  40
+the number of survivng (sk_r+1, sk_r_[7~0]) is  24
+the number of surviving (sk_r+1, sk_r) is  26
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8300
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x300
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x80c0
+sk_r+1:  0x0  sk_r:  0xc0c0
+sk_r+1:  0x0  sk_r:  0xc0
+sk_r+1:  0x0  sk_r:  0x40c0
+cur t is  2
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  77
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+cur t is  3
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  12
+the number of survivng (sk_r+1, sk_r_[7~0]) is  8
+the number of surviving (sk_r+1, sk_r) is  14
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8060
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc020
+sk_r+1:  0x0  sk_r:  0x8020
+sk_r+1:  0x0  sk_r:  0x20
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  4
+the number of surviving sk_r+1_[7~0] is  19
+the number of surviving sk_r+1_ is  57
+the number of survivng (sk_r+1, sk_r_[7~0]) is  33
+the number of surviving (sk_r+1, sk_r) is  13
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+cur t is  5
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  22
+the number of survivng (sk_r+1, sk_r_[7~0]) is  15
+the number of surviving (sk_r+1, sk_r) is  6
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  6
+the number of surviving sk_r+1_[7~0] is  11
+the number of surviving sk_r+1_ is  97
+the number of survivng (sk_r+1, sk_r_[7~0]) is  27
+the number of surviving (sk_r+1, sk_r) is  12
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x6000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x2000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xe000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xa000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+cur t is  7
+the number of surviving sk_r+1_[7~0] is  20
+the number of surviving sk_r+1_ is  28
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  20
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4020
+sk_r+1:  0x0  sk_r:  0x8020
+sk_r+1:  0x0  sk_r:  0xc020
+sk_r+1:  0x0  sk_r:  0x2000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0xa000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+cur t is  8
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  43
+the number of survivng (sk_r+1, sk_r_[7~0]) is  24
+the number of surviving (sk_r+1, sk_r) is  20
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xe000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xa000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x6000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x2000
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc001
+sk_r+1:  0x0  sk_r:  0x8001
+sk_r+1:  0x0  sk_r:  0x4001
+sk_r+1:  0x0  sk_r:  0x1
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  9
+the number of surviving sk_r+1_[7~0] is  9
+the number of surviving sk_r+1_ is  32
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+cur t is  10
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  0
+the number of survivng (sk_r+1, sk_r_[7~0]) is  0
+the number of surviving (sk_r+1, sk_r) is  0
+distances between true keys and key guesses are: 
+cur t is  11
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  73
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  12
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+cur t is  12
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  35
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  33
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x80c0
+sk_r+1:  0x0  sk_r:  0xa0c0
+sk_r+1:  0x0  sk_r:  0xc0c0
+sk_r+1:  0x0  sk_r:  0xe0c0
+sk_r+1:  0x0  sk_r:  0xc0
+sk_r+1:  0x0  sk_r:  0x20c0
+sk_r+1:  0x0  sk_r:  0x40c0
+sk_r+1:  0x0  sk_r:  0x60c0
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xe000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0xa040
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0xe040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x2040
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x6040
+cur t is  13
+the number of surviving sk_r+1_[7~0] is  17
+the number of surviving sk_r+1_ is  49
+the number of survivng (sk_r+1, sk_r_[7~0]) is  28
+the number of surviving (sk_r+1, sk_r) is  26
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x6000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x2000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x40c0
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4280
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc280
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8280
+cur t is  14
+the number of surviving sk_r+1_[7~0] is  12
+the number of surviving sk_r+1_ is  64
+the number of survivng (sk_r+1, sk_r_[7~0]) is  25
+the number of surviving (sk_r+1, sk_r) is  15
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0xc080
+cur t is  15
+the number of surviving sk_r+1_[7~0] is  12
+the number of surviving sk_r+1_ is  35
+the number of survivng (sk_r+1, sk_r_[7~0]) is  14
+the number of surviving (sk_r+1, sk_r) is  17
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x4040
+cur t is  16
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  0
+the number of survivng (sk_r+1, sk_r_[7~0]) is  0
+the number of surviving (sk_r+1, sk_r) is  0
+distances between true keys and key guesses are: 
+cur t is  17
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  49
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  4
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+cur t is  18
+the number of surviving sk_r+1_[7~0] is  22
+the number of surviving sk_r+1_ is  39
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+cur t is  19
+the number of surviving sk_r+1_[7~0] is  13
+the number of surviving sk_r+1_ is  62
+the number of survivng (sk_r+1, sk_r_[7~0]) is  21
+the number of surviving (sk_r+1, sk_r) is  11
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+cur t is  20
+the number of surviving sk_r+1_[7~0] is  10
+the number of surviving sk_r+1_ is  48
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+cur t is  21
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  19
+the number of survivng (sk_r+1, sk_r_[7~0]) is  17
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+cur t is  22
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  88
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  16
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+cur t is  23
+the number of surviving sk_r+1_[7~0] is  9
+the number of surviving sk_r+1_ is  32
+the number of survivng (sk_r+1, sk_r_[7~0]) is  9
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+cur t is  24
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  170
+the number of survivng (sk_r+1, sk_r_[7~0]) is  19
+the number of surviving (sk_r+1, sk_r) is  16
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4380
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  25
+the number of surviving sk_r+1_[7~0] is  9
+the number of surviving sk_r+1_ is  38
+the number of survivng (sk_r+1, sk_r_[7~0]) is  25
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+cur t is  26
+the number of surviving sk_r+1_[7~0] is  12
+the number of surviving sk_r+1_ is  33
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  12
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc0c0
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+cur t is  27
+the number of surviving sk_r+1_[7~0] is  12
+the number of surviving sk_r+1_ is  62
+the number of survivng (sk_r+1, sk_r_[7~0]) is  30
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+cur t is  28
+the number of surviving sk_r+1_[7~0] is  9
+the number of surviving sk_r+1_ is  69
+the number of survivng (sk_r+1, sk_r_[7~0]) is  17
+the number of surviving (sk_r+1, sk_r) is  12
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+cur t is  29
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  35
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  20
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc280
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8280
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4280
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0xc200
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8200
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x4200
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x200
+sk_r+1:  0x0  sk_r:  0x0
+cur t is  30
+the number of surviving sk_r+1_[7~0] is  12
+the number of surviving sk_r+1_ is  15
+the number of survivng (sk_r+1, sk_r_[7~0]) is  12
+the number of surviving (sk_r+1, sk_r) is  10
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+cur t is  31
+the number of surviving sk_r+1_[7~0] is  13
+the number of surviving sk_r+1_ is  38
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  13
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+cur t is  32
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  68
+the number of survivng (sk_r+1, sk_r_[7~0]) is  15
+the number of surviving (sk_r+1, sk_r) is  26
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc200
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4200
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc0c0
+sk_r+1:  0x0  sk_r:  0x80c0
+sk_r+1:  0x0  sk_r:  0x40c0
+sk_r+1:  0x0  sk_r:  0xc0
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  33
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  32
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  15
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+cur t is  34
+the number of surviving sk_r+1_[7~0] is  9
+the number of surviving sk_r+1_ is  58
+the number of survivng (sk_r+1, sk_r_[7~0]) is  17
+the number of surviving (sk_r+1, sk_r) is  15
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+cur t is  35
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  35
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  6
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0xc080
+cur t is  36
+the number of surviving sk_r+1_[7~0] is  17
+the number of surviving sk_r+1_ is  63
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+cur t is  37
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  75
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  10
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x4040
+cur t is  38
+the number of surviving sk_r+1_[7~0] is  19
+the number of surviving sk_r+1_ is  33
+the number of survivng (sk_r+1, sk_r_[7~0]) is  8
+the number of surviving (sk_r+1, sk_r) is  19
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc200
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8200
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4200
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x200
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x4040
+cur t is  39
+the number of surviving sk_r+1_[7~0] is  19
+the number of surviving sk_r+1_ is  129
+the number of survivng (sk_r+1, sk_r_[7~0]) is  35
+the number of surviving (sk_r+1, sk_r) is  8
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+cur t is  40
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  30
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  11
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4080
+cur t is  41
+the number of surviving sk_r+1_[7~0] is  18
+the number of surviving sk_r+1_ is  73
+the number of survivng (sk_r+1, sk_r_[7~0]) is  32
+the number of surviving (sk_r+1, sk_r) is  20
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+cur t is  42
+the number of surviving sk_r+1_[7~0] is  14
+the number of surviving sk_r+1_ is  55
+the number of survivng (sk_r+1, sk_r_[7~0]) is  14
+the number of surviving (sk_r+1, sk_r) is  24
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8020
+sk_r+1:  0x0  sk_r:  0xc020
+sk_r+1:  0x0  sk_r:  0x20
+sk_r+1:  0x0  sk_r:  0x4020
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x40
+sk_r+1:  0x0  sk_r:  0x4040
+cur t is  43
+the number of surviving sk_r+1_[7~0] is  11
+the number of surviving sk_r+1_ is  36
+the number of survivng (sk_r+1, sk_r_[7~0]) is  17
+the number of surviving (sk_r+1, sk_r) is  22
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0xc100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x8020
+sk_r+1:  0x0  sk_r:  0x4020
+sk_r+1:  0x0  sk_r:  0xc040
+sk_r+1:  0x0  sk_r:  0x8040
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0x40
+cur t is  44
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  60
+the number of survivng (sk_r+1, sk_r_[7~0]) is  22
+the number of surviving (sk_r+1, sk_r) is  5
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+cur t is  45
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  22
+the number of survivng (sk_r+1, sk_r_[7~0]) is  32
+the number of surviving (sk_r+1, sk_r) is  9
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+cur t is  46
+the number of surviving sk_r+1_[7~0] is  13
+the number of surviving sk_r+1_ is  75
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  9
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+cur t is  47
+the number of surviving sk_r+1_[7~0] is  13
+the number of surviving sk_r+1_ is  86
+the number of survivng (sk_r+1, sk_r_[7~0]) is  18
+the number of surviving (sk_r+1, sk_r) is  14
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x100
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0xc000
+cur t is  48
+the number of surviving sk_r+1_[7~0] is  8
+the number of surviving sk_r+1_ is  59
+the number of survivng (sk_r+1, sk_r_[7~0]) is  8
+the number of surviving (sk_r+1, sk_r) is  7
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8080
+cur t is  49
+the number of surviving sk_r+1_[7~0] is  16
+the number of surviving sk_r+1_ is  51
+the number of survivng (sk_r+1, sk_r_[7~0]) is  16
+the number of surviving (sk_r+1, sk_r) is  16
+distances between true keys and key guesses are: 
+sk_r+1:  0x0  sk_r:  0x4180
+sk_r+1:  0x0  sk_r:  0x4080
+sk_r+1:  0x0  sk_r:  0x180
+sk_r+1:  0x0  sk_r:  0x80
+sk_r+1:  0x0  sk_r:  0xc180
+sk_r+1:  0x0  sk_r:  0xc080
+sk_r+1:  0x0  sk_r:  0x8180
+sk_r+1:  0x0  sk_r:  0x8080
+sk_r+1:  0x0  sk_r:  0x4100
+sk_r+1:  0x0  sk_r:  0x4000
+sk_r+1:  0x0  sk_r:  0x0
+sk_r+1:  0x0  sk_r:  0xc000
+sk_r+1:  0x0  sk_r:  0x8100
+sk_r+1:  0x0  sk_r:  0x8000
+sk_r+1:  0x0  sk_r:  0x4040
+sk_r+1:  0x0  sk_r:  0xc040
+
+Process finished with exit code 0

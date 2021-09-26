@@ -1,0 +1,37 @@
+nr=1, in_diff=(0x211, 0xa04), out_diff=(0x2800, 0x10)
+
+i is  0  neutral res is  0.9971537001897534
+i is  1  neutral res is  0.9941916747337851
+i is  2  neutral res is  0.0
+i is  3  neutral res is  0.9949799196787149
+i is  4  neutral res is  0.9807868252516011
+i is  5  neutral res is  0.9643835616438357
+i is  6  neutral res is  0.9454905847373637
+i is  7  neutral res is  0.8727097396335584
+i is  8  neutral res is  0.7624254473161034
+i is  9  neutral res is  0.0
+i is  10  neutral res is  0.5068870523415978
+i is  11  neutral res is  1.0
+i is  12  neutral res is  0.5
+i is  13  neutral res is  0.0
+i is  14  neutral res is  1.0
+i is  15  neutral res is  1.0
+i is  16  neutral res is  0.0
+i is  17  neutral res is  0.5123639960435212
+i is  18  neutral res is  0.0
+i is  19  neutral res is  0.5005107252298263
+i is  20  neutral res is  1.0
+i is  21  neutral res is  1.0
+i is  22  neutral res is  1.0
+i is  23  neutral res is  0.998001998001998
+i is  24  neutral res is  0.9962264150943396
+i is  25  neutral res is  0.0
+i is  26  neutral res is  0.9940476190476191
+i is  27  neutral res is  0.9842829076620825
+i is  28  neutral res is  0.9708171206225681
+i is  29  neutral res is  0.946911196911197
+i is  30  neutral res is  0.8764478764478765
+i is  31  neutral res is  0.7571288102261554
+the probability that a plaintext structure created from these bits is  -4.1826230336252035
+
+Process finished with exit code 0
