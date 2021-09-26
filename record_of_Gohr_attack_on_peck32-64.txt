@@ -1,0 +1,212 @@
+Checking Speck32/64 implementation.
+Testvector verified.
+Test: 0
+Difference between real key and key guess:  0x0 0x0
+Test: 1
+Difference between real key and key guess:  0x0 0x0
+Test: 2
+Difference between real key and key guess:  0x0 0x8000
+Test: 3
+Difference between real key and key guess:  0x3dd8 0x85ca
+Test: 4
+Difference between real key and key guess:  0x75f1 0xaac3
+Test: 5
+Difference between real key and key guess:  0x6070 0xff81
+Test: 6
+Difference between real key and key guess:  0x0 0x8000
+Test: 7
+Difference between real key and key guess:  0xd69c 0xf93b
+Test: 8
+Difference between real key and key guess:  0x0 0x0
+Test: 9
+Difference between real key and key guess:  0x3e76 0xb1e0
+Test: 10
+Difference between real key and key guess:  0x0 0x0
+Test: 11
+Difference between real key and key guess:  0x0 0x0
+Test: 12
+Difference between real key and key guess:  0x74b8 0xd775
+Test: 13
+Difference between real key and key guess:  0xafd6 0xab15
+Test: 14
+Difference between real key and key guess:  0x0 0x0
+Test: 15
+Difference between real key and key guess:  0xa9e8 0xa881
+Test: 16
+Difference between real key and key guess:  0x0 0x0
+Test: 17
+Difference between real key and key guess:  0xafd8 0x6dcc
+Test: 18
+Difference between real key and key guess:  0x0 0x0
+Test: 19
+Difference between real key and key guess:  0x0 0x0
+Test: 20
+Difference between real key and key guess:  0x0 0x0
+Test: 21
+Difference between real key and key guess:  0xe0c1 0xd25
+Test: 22
+Difference between real key and key guess:  0x0 0x0
+Test: 23
+Difference between real key and key guess:  0x6c54 0x9fee
+Test: 24
+Difference between real key and key guess:  0xfe3a 0xb780
+Test: 25
+Difference between real key and key guess:  0x0 0x0
+Test: 26
+Difference between real key and key guess:  0x0 0x0
+Test: 27
+Difference between real key and key guess:  0x80f6 0x9c32
+Test: 28
+Difference between real key and key guess:  0x0 0x0
+Test: 29
+Difference between real key and key guess:  0x0 0x0
+Test: 30
+Difference between real key and key guess:  0x0 0x0
+Test: 31
+Difference between real key and key guess:  0xf4fe 0x70cb
+Test: 32
+Difference between real key and key guess:  0xe872 0x7679
+Test: 33
+Difference between real key and key guess:  0x0 0x0
+Test: 34
+Difference between real key and key guess:  0x1f 0x1f62
+Test: 35
+Difference between real key and key guess:  0x0 0x0
+Test: 36
+Difference between real key and key guess:  0x70fe 0x8a6d
+Test: 37
+Difference between real key and key guess:  0x0 0x0
+Test: 38
+Difference between real key and key guess:  0x0 0x0
+Test: 39
+Difference between real key and key guess:  0x0 0x0
+Test: 40
+Difference between real key and key guess:  0x0 0x0
+Test: 41
+Difference between real key and key guess:  0x0 0x0
+Test: 42
+Difference between real key and key guess:  0xab9f 0xd919
+Test: 43
+Difference between real key and key guess:  0x0 0x0
+Test: 44
+Difference between real key and key guess:  0x0 0x0
+Test: 45
+Difference between real key and key guess:  0x0 0x0
+Test: 46
+Difference between real key and key guess:  0x0 0x0
+Test: 47
+Difference between real key and key guess:  0x0 0x0
+Test: 48
+Difference between real key and key guess:  0x0 0x0
+Test: 49
+Difference between real key and key guess:  0x2f98 0x33f7
+Test: 50
+Difference between real key and key guess:  0x8722 0x844c
+Test: 51
+Difference between real key and key guess:  0x7a4 0x4385
+Test: 52
+Difference between real key and key guess:  0x0 0x0
+Test: 53
+Difference between real key and key guess:  0x0 0x0
+Test: 54
+Difference between real key and key guess:  0x3489 0x5bfb
+Test: 55
+Difference between real key and key guess:  0x0 0x0
+Test: 56
+Difference between real key and key guess:  0x0 0x4000
+Test: 57
+Difference between real key and key guess:  0x0 0x0
+Test: 58
+Difference between real key and key guess:  0x0 0x0
+Test: 59
+Difference between real key and key guess:  0xcc52 0xf144
+Test: 60
+Difference between real key and key guess:  0x0 0x0
+Test: 61
+Difference between real key and key guess:  0x0 0x0
+Test: 62
+Difference between real key and key guess:  0x7c41 0x88cd
+Test: 63
+Difference between real key and key guess:  0x0 0x0
+Test: 64
+Difference between real key and key guess:  0x0 0x0
+Test: 65
+Difference between real key and key guess:  0x4001 0xb8e6
+Test: 66
+Difference between real key and key guess:  0x0 0x0
+Test: 67
+Difference between real key and key guess:  0x8667 0x1f55
+Test: 68
+Difference between real key and key guess:  0x0 0x0
+Test: 69
+Difference between real key and key guess:  0x0 0x0
+Test: 70
+Difference between real key and key guess:  0x0 0x0
+Test: 71
+Difference between real key and key guess:  0x0 0x0
+Test: 72
+Difference between real key and key guess:  0x0 0x0
+Test: 73
+Difference between real key and key guess:  0x0 0x0
+Test: 74
+Difference between real key and key guess:  0x1536 0x86e3
+Test: 75
+Difference between real key and key guess:  0x0 0x0
+Test: 76
+Difference between real key and key guess:  0x0 0x8000
+Test: 77
+Difference between real key and key guess:  0x0 0x0
+Test: 78
+Difference between real key and key guess:  0x0 0x0
+Test: 79
+Difference between real key and key guess:  0x7a34 0x4447
+Test: 80
+Difference between real key and key guess:  0x0 0x0
+Test: 81
+Difference between real key and key guess:  0x0 0x0
+Test: 82
+Difference between real key and key guess:  0x0 0x0
+Test: 83
+Difference between real key and key guess:  0x0 0x0
+Test: 84
+Difference between real key and key guess:  0x0 0x0
+Test: 85
+Difference between real key and key guess:  0x6f01 0x8c96
+Test: 86
+Difference between real key and key guess:  0x0 0x0
+Test: 87
+Difference between real key and key guess:  0x0 0x0
+Test: 88
+Difference between real key and key guess:  0x0 0x0
+Test: 89
+Difference between real key and key guess:  0x1be3 0x4882
+Test: 90
+Difference between real key and key guess:  0x2de6 0x659e
+Test: 91
+Difference between real key and key guess:  0x5114 0x6980
+Test: 92
+Difference between real key and key guess:  0x42f8 0xcd11
+Test: 93
+Difference between real key and key guess:  0x16c1 0xedad
+Test: 94
+Difference between real key and key guess:  0x0 0x8000
+Test: 95
+Difference between real key and key guess:  0x0 0x8000
+Test: 96
+Difference between real key and key guess:  0x0 0x0
+Test: 97
+Difference between real key and key guess:  0x0 0x8000
+Test: 98
+Difference between real key and key guess:  0x303d 0x136d
+Test: 99
+Difference between real key and key guess:  0xce6f 0xf7b8
+Done.
+Differences between guessed and last key: ['0x0', '0x0', '0x0', '0x3dd8', '0x75f1', '0x6070', '0x0', '0xd69c', '0x0', '0x3e76', '0x0', '0x0', '0x74b8', '0xafd6', '0x0', '0xa9e8', '0x0', '0xafd8', '0x0', '0x0', '0x0', '0xe0c1', '0x0', '0x6c54', '0xfe3a', '0x0', '0x0', '0x80f6', '0x0', '0x0', '0x0', '0xf4fe', '0xe872', '0x0', '0x1f', '0x0', '0x70fe', '0x0', '0x0', '0x0', '0x0', '0x0', '0xab9f', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x2f98', '0x8722', '0x7a4', '0x0', '0x0', '0x3489', '0x0', '0x0', '0x0', '0x0', '0xcc52', '0x0', '0x0', '0x7c41', '0x0', '0x0', '0x4001', '0x0', '0x8667', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x1536', '0x0', '0x0', '0x0', '0x0', '0x7a34', '0x0', '0x0', '0x0', '0x0', '0x0', '0x6f01', '0x0', '0x0', '0x0', '0x1be3', '0x2de6', '0x5114', '0x42f8', '0x16c1', '0x0', '0x0', '0x0', '0x0', '0x303d', '0xce6f']
+Differences between guessed and second-to-last key: ['0x0', '0x0', '0x8000', '0x85ca', '0xaac3', '0xff81', '0x8000', '0xf93b', '0x0', '0xb1e0', '0x0', '0x0', '0xd775', '0xab15', '0x0', '0xa881', '0x0', '0x6dcc', '0x0', '0x0', '0x0', '0xd25', '0x0', '0x9fee', '0xb780', '0x0', '0x0', '0x9c32', '0x0', '0x0', '0x0', '0x70cb', '0x7679', '0x0', '0x1f62', '0x0', '0x8a6d', '0x0', '0x0', '0x0', '0x0', '0x0', '0xd919', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x33f7', '0x844c', '0x4385', '0x0', '0x0', '0x5bfb', '0x0', '0x4000', '0x0', '0x0', '0xf144', '0x0', '0x0', '0x88cd', '0x0', '0x0', '0xb8e6', '0x0', '0x1f55', '0x0', '0x0', '0x0', '0x0', '0x0', '0x0', '0x86e3', '0x0', '0x8000', '0x0', '0x0', '0x4447', '0x0', '0x0', '0x0', '0x0', '0x0', '0x8c96', '0x0', '0x0', '0x0', '0x4882', '0x659e', '0x6980', '0xcd11', '0xedad', '0x8000', '0x8000', '0x0', '0x8000', '0x136d', '0xf7b8']
+Wall time per attack (average in seconds): 69.7865324997902
+Data blocks used (average, log2):  13.46041493916217
+
+Process finished with exit code 0
+
+The attack setting provided by Gohr in his paper is adopted,
+c1 = 5.0,    c2 = 10.0
