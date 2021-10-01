@@ -148,6 +148,56 @@ def attack_with_ND8T(c, net, u_d, s_d, th=13064, c3=0.5):
                                   key_guess_length=key_guess_length)[0]
     return survive_key
 
+def attack_with_ND7t(c, th_M, ts, n, th_n, c3, net, u_d, s_d, survive_key):
+    n_cand, search_iter = 128, 3
+    c0l, c0r, c1l, c1r = c[0], c[1], c[2], c[3]
+    M = len(c0l)
+    
+    #accelerate
+    c0l = np.tile(c0l, n_cand)
+    c0r = np.tile(c0r, n_cand)
+    c1l = np.tile(c1l, n_cand)
+    c1r = np.tile(c1r, n_cand)
+    
+    key_guess_length = 16
+    res = []
+    valid_flag = False
+    for kg_12 in survive_key:
+        d0l, d0r = sp.dec_one_round((c0l, c0r), kg_12)
+        d1l, d1r = sp.dec_one_round((c1l, c1r), kg_12)
+        cnt_M = np.zeros(2 ** key_guess_length, dtype=np.uint32)
+        cnt_n = np.zeros(2 ** key_guess_length, dtype=np.uint32)
+        key_cand = np.random.choice(2 ** key_guess_length, n_cand, False)
+        T_cand = np.zeros(n_cand, dtype=np.uint32)
+
+        # begin bayesian search
+        for i in range(search_iter):
+            key_guess = np.repeat(key_cand, M)
+            t0l, t0r = sp.dec_one_round((d0l, d0r), key_guess)
+            t1l, t1r = sp.dec_one_round((d1l, d1r), key_guess)
+            x = sp.convert_to_binary([t0l, t0r, t1l, t1r])
+            z = net.predict(x, batch_size=10000)
+            z = np.squeeze(z)
+            z = np.reshape(z, (n_cand, -1)) > c3
+            T_cand = np.sum(z, axis=1)
+            cnt_M[key_cand] = T_cand.copy()
+            cnt_n[key_cand] = np.sum(z[:, :n], axis=1)
+            if i == search_iter - 1:
+                break
+            key_cand = gen_keys_candidate(key_cand, T_cand, key_guess_length, u_d, s_d)
+        valid_index = np.sum(cnt_M > th_M)
+        if valid_index >= ts:
+            # the homogeneous set passes test and is a valid plaintext structure
+            for kg_11 in [i for i in range(2**key_guess_length) if cnt_n[i] > th_n]:
+                res.append((kg_12, kg_11))
+            valid_flag = True
+    if valid_flag:
+        return res, True
+    else:
+        # the homogeneous set does not pass the test and we don't need to return surviving keys
+        return [], False
+
+
 
 # use ND7s to perform valid homogeneous set identification as well as sk11[0~7] recovery attack
 # M, th_M and ts is used for identifying valid homogeneous set
@@ -160,6 +210,8 @@ def attack_with_ND7s(c, th_M, ts, n, th_n, c3, net, u_d, s_d, c_bits=[10,11,12],
     n_cand, search_iter = 32, 3
     c0l, c0r, c1l, c1r = c[0], c[1], c[2], c[3]
     key_guess_length = 8
+    res = []
+    valid_flag = False
 
     for kg_12 in survive_key:
         d0l, d0r = sp.dec_one_round((c0l, c0r), kg_12)
@@ -186,10 +238,14 @@ def attack_with_ND7s(c, th_M, ts, n, th_n, c3, net, u_d, s_d, c_bits=[10,11,12],
         valid_index = np.sum(cnt_M > th_M)
         if valid_index >= ts:
             # the homogeneous set passes test and is a valid plaintext structure
-            survive_key = [i for i in range(2 ** key_guess_length) if cnt_n[i] > th_n]
-            return survive_key, True
-    # the homogeneous set does not pass the test and we don't need to return surviving keys
-    return [], False
+            for kg_11 in [i for i in range(2 ** key_guess_length) if cnt_n[i] > th_n]:
+            	res.append((kg_12, kg_11))
+            valid_flag = True
+    if valid_flag:
+        return res, True
+    else:
+        # the homogeneous set does not pass the test and we don't need to return surviving keys
+        return [], False
 
 
 def output_surviving_key_difference(sur_key, sk12, sk11):
@@ -198,6 +254,13 @@ def output_surviving_key_difference(sur_key, sk12, sk11):
     print('Difference between surviving (kg_12, kg_11[7~0]) and (sk_12, sk_11[7~0]) are ')
     for i in range(len(sur_key)):
         print((hex(sur_key[i][0] ^ sk12), hex((sur_key[i][1] ^ sk11) & 0xff)))
+
+def output_surviving_key_difference_v2(sur_key, sk12, sk11):
+    if len(sur_key) == 0:
+        return
+    print('Difference between surviving (kg_12, kg_11) and (sk_12, sk_11) are ')
+    for i in range(len(sur_key)):
+        print((hex(sur_key[i][0] ^ sk12), hex(sur_key[i][1] ^ sk11)))
 
 
 def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
@@ -211,31 +274,32 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
 
     # settings of key recovery
     nr = 12
-    p0 = 2 ** (-6)
-    n = (353518, 22586)
-    th_n = (175328, 6690)
+    p0 = 2 ** (-2)
+    n = (353518, 22553)
+    th_n = (175328, 6684)
     # settings of valid plaintext structure identification
     M = 37938
     th_M = 11103
     ts = 8
     # parameters related to NDs, 17 / 9 normal distributions
     c_bits = [14, 13, 12, 11, 10, 9, 8, 7]
-    p3 = (0.4913596, 0.2862612)
+    p3 = (0.4913596, 0.2864982)
     ND8t_p2_d1 = np.array([0.5183955, 0.5056154, 0.4992611, 0.4957098, 0.4939058, 0.4927488, 0.4924816, 0.4918235, 0.4916707,
                           0.4914085, 0.4913381, 0.4913277, 0.4911237, 0.4913378, 0.4914284, 0.49097, 0.4914429])
     ND7s_p2_d1 = np.load('./p2_estimation_res/student/0x0040-0x0/{0}/{0}_p2_d1.npy'.format(7))
     u_d_8, s_d_8 = get_u_d_s_d(n[0], p0, ND8t_p2_d1, p3[0])
-    u_d_7, s_d_7 = get_u_d_s_d(n[1], p0, ND7s_p2_d1, p3[1])
+    u_d_7, s_d_7 = get_u_d_s_d(M, p0, ND7s_p2_d1, p3[1])
 
     # some statistics of the attack
     true_success, true_fail, false_success, false_fail = 0, 0, 0, 0
-    survive_num = np.zeros(t, dtype=np.uint32)
+    survive_num = np.zeros((t, 2), dtype=np.uint32)
     consumption_num = np.zeros(t, dtype=np.uint32)
     is_valid = np.zeros(t, dtype=np.uint8)
     is_success = np.zeros(t, dtype=np.uint8)
     attack_time = np.zeros(t)
 
     for attack_index in range(t):
+        print('attack:', attack_index)
         start = time.time()
         key = np.frombuffer(urandom(8), dtype=np.uint16).reshape(4, -1)
         ks = sp.expand_key(key, nr)
@@ -244,7 +308,7 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
         homogeneous_set_consumption = 0
         # identify valid homogeneous set and recover keys
         while not valid_homogeneous_set:
-            if homogeneous_set_consumption >= 18:
+            if homogeneous_set_consumption >= 24:
                 print('attack failed because no valid homogeneous set can be found')
                 break
             homogeneous_set_consumption += 1
@@ -261,6 +325,8 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
             print(homogeneous_set_consumption, ' plaintext structures generated.')
             if valid_homogeneous_set:
                 # find a valid homogeneous set
+                survive_num[attack_index][0] = len(survive_key_1)
+                survive_num[attack_index][1] = len(survive_key_2)
                 t0l, t0r = sp.encrypt((p0l, p0r), ks[:2])
                 t1l, t1r = sp.encrypt((p1l, p1r), ks[:2])
                 good_num = ((t0l ^ t1l) == 0x2800) * ((t0r ^ t1r) == 0x10)
@@ -272,6 +338,7 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
                     print('invalid homogeneous set')
                     is_valid[attack_index] = 0
 
+        consumption_num[attack_index] = homogeneous_set_consumption
         end = time.time()
         output_surviving_key_difference(sur_key=survive_key_2, sk12=sk_12, sk11=sk_11)
         attack_time[attack_index] = end - start
@@ -291,18 +358,20 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
                 true_fail += 1
             else:
                 false_fail += 1
-    average_surviving_num = np.mean(survive_num)
+    
+    average_surviving_num = np.mean(survive_num, axis=0)
     print('attack success time: {}'.format(np.sum(is_success)))
     print('get valid homogeneous set time: {}'.format(np.sum(is_valid)))
     print('success time with valid homogeneous sets: {}'.format(true_success))
     print('failure time with valid homogeneous sets: {}'.format(true_fail))
     print('success time with invalid homogeneous sets: {}'.format(false_success))
     print('failure time with invalid homogeneous sets: {}'.format(false_fail))
-    print('average surviving key in stage1: {}'.format(average_surviving_num))
+    print('average surviving kg_12 num: {}'.format(average_surviving_num[0]))
+    print('average surviving (kg_12, kg_11[7~0]) num: {}'.format(average_surviving_num[1]))
     print('average attack time: {}s'.format(np.mean(attack_time)))
     print('average homogeneous set consumption: {}'.format(np.mean(consumption_num)))
 
-    folder = './key_recovery_record/bayesian/3_8_6_{}_{}_{}_{}'.format(n[0], n[1], n[2], n[3])
+    folder = './key_recovery_record/bayesian/3_8_7_{}_{}_{}_{}'.format(n[0], th_n[0], n[1], th_n[1])
     if not path.exists(folder):
         mkdir(folder)
     folder += '/'
@@ -313,7 +382,120 @@ def key_recovery_on_12_round(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
     np.save(folder + 'attack_time.npy', attack_time)
 
 
-def key_recovery_on_12_round_v2(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
+def key_recovery_on_12_round_v2(t, diff, neutral_bits):
+    # load 8-round ND
+    json_file = open('./saved_model/teacher/0x0040-0x0/single_block_resnet.json', 'r')
+    json_model = json_file.read()
+    net8 = model_from_json(json_model)
+    net8.load_weights('./saved_model/teacher/0x0040-0x0/net8_small.h5')
+    net8.compile(optimizer='adam', loss='mse', metrics=['acc'])
+    net7t = load_model('./saved_model/teacher/0x0040-0x0/7_distinguisher.h5')
+
+    # settings of key recovery
+    nr = 12
+    p0 = 2 ** (-2)
+    n = (353518, 5272)
+    th_n = (175328, 1325)
+    M = 6466
+    th_M = 1536
+    ts = 16
+    p3 = (0.4913596, 0.2162363)
+    ND8t_p2_d1 = np.array([0.5183955, 0.5056154, 0.4992611, 0.4957098, 0.4939058, 0.4927488, 0.4924816, 0.4918235, 0.4916707,
+                          0.4914085, 0.4913381, 0.4913277, 0.4911237, 0.4913378, 0.4914284, 0.49097, 0.4914429])
+    ND7t_p2_d1 = np.load('./p2_estimation_res/teacher/0x0040-0x0/7/7_0.55_p2_d1.npy')
+    u_d_8, s_d_8 = get_u_d_s_d(n[0], p0, ND8t_p2_d1, p3[0])
+    u_d_7, s_d_7 = get_u_d_s_d(M, p0, ND7t_p2_d1, p3[1])
+
+    # some statistics of the attack
+    true_success, true_fail, false_success, false_fail = 0, 0, 0, 0
+    survive_num = np.zeros((t, 2), dtype=np.uint32)
+    consumption_num = np.zeros(t, dtype=np.uint32)
+    
+    is_valid = np.zeros(t, dtype=np.uint8)
+    is_success = np.zeros(t, dtype=np.uint8)
+    attack_time = np.zeros(t)
+    for attack_index in range(t):
+        print('attack:', attack_index)
+        start = time.time()
+        key = np.frombuffer(urandom(8), dtype=np.uint16).reshape(4, -1)
+        ks = sp.expand_key(key, nr)
+        sk_11, sk_12 = ks[nr - 2][0], ks[nr - 1][0]
+        valid_homogeneous_set = False
+        homogeneous_set_consumption = 0
+        # identify valid homogeneous set and recover keys
+        while not valid_homogeneous_set:
+            if homogeneous_set_consumption >= 24:
+                print('attack failed because no valid homogeneous set can be found')
+                break
+            homogeneous_set_consumption += 1
+            p0l, p0r, p1l, p1r = make_homogeneous_set(diff=diff, neutral_bits=neutral_bits)
+            p0l, p0r = sp.dec_one_round((p0l[0:n[0]], p0r[0:n[0]]), 0)
+            p1l, p1r = sp.dec_one_round((p1l[0:n[0]], p1r[0:n[0]]), 0)
+            c0l, c0r = sp.encrypt((p0l, p0r), ks)
+            c1l, c1r = sp.encrypt((p1l, p1r), ks)
+            survive_key_1 = attack_with_ND8T((c0l, c0r, c1l, c1r), net=net8, u_d=u_d_8, s_d=s_d_8, th=th_n[0], c3=0.5)
+            c0l, c0r, c1l, c1r = c0l[:M], c0r[:M], c1l[:M], c1r[:M]
+            survive_key_2, valid_homogeneous_set = attack_with_ND7t((c0l, c0r, c1l, c1r), th_M, ts, n[1], th_n[1], 0.55, net7t, u_d_7, s_d_7, survive_key_1)
+            print(homogeneous_set_consumption, ' plaintext structures generated.')
+            if valid_homogeneous_set:
+                # find a valid homogeneous set
+                survive_num[attack_index][0] = len(survive_key_1)
+                survive_num[attack_index][1] = len(survive_key_2)
+                t0l, t0r = sp.encrypt((p0l, p0r), ks[:2])
+                t1l, t1r = sp.encrypt((p1l, p1r), ks[:2])
+                good_num = ((t0l ^ t1l) == 0x2800) * ((t0r ^ t1r) == 0x10)
+                good_num = np.sum(good_num)
+                if good_num == n[0]:
+                    print('valid homogeneous set')
+                    is_valid[attack_index] = 1
+                else:
+                    print('invalid homogeneous set')
+                    is_valid[attack_index] = 0
+        
+        consumption_num[attack_index] = homogeneous_set_consumption
+        end = time.time()
+        output_surviving_key_difference_v2(sur_key=survive_key_2, sk12=sk_12, sk11=sk_11)
+        attack_time[attack_index] = end - start
+        print('time cost: {}s'.format(attack_time[attack_index]))
+        if (sk_12, sk_11) in survive_key_2:
+            print('true key survived.')
+            is_success[attack_index] = 1
+            if is_valid[attack_index] == 1:
+                true_success += 1
+            else:
+                false_success += 1
+        else:
+            print('true key didn\'t survived')
+            is_success[attack_index] = 0
+            if is_valid[attack_index] == 1:
+                true_fail += 1
+            else:
+                false_fail += 1
+    
+    average_surviving_num = np.mean(survive_num, axis=0)
+    print('attack success time: {}'.format(np.sum(is_success)))
+    print('get valid homogeneous set time: {}'.format(np.sum(is_valid)))
+    print('success time with valid homogeneous sets: {}'.format(true_success))
+    print('failure time with valid homogeneous sets: {}'.format(true_fail))
+    print('success time with invalid homogeneous sets: {}'.format(false_success))
+    print('failure time with invalid homogeneous sets: {}'.format(false_fail))
+    print('average surviving kg_12 num: {}'.format(average_surviving_num[0]))
+    print('average surviving (kg_12, kg_11) num: {}'.format(average_surviving_num[1]))
+    print('average attack time: {}s'.format(np.mean(attack_time)))
+    print('average homogeneous set consumption: {}'.format(np.mean(consumption_num)))
+
+    folder = './key_recovery_record/bayesian/3_8_7_{}_{}_{}_{}'.format(n[0], th_n[0], n[1], th_n[1])
+    if not path.exists(folder):
+        mkdir(folder)
+    folder += '/'
+    np.save(folder + 'is_valid.npy', is_valid)
+    np.save(folder + 'is_success.npy', is_success)
+    np.save(folder + 'survive_num.npy', survive_num)
+    np.save(folder + 'consumption_num.npy', consumption_num)
+    np.save(folder + 'attack_time.npy', attack_time)
+
+# function key_recovery_on_12_round_v3 is just for test, not for real key recovery attack
+def key_recovery_on_12_round_v3(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12]):
     # load 8-round ND
     json_file = open('./saved_model/teacher/0x0040-0x0/single_block_resnet.json', 'r')
     json_model = json_file.read()
@@ -351,9 +533,7 @@ def key_recovery_on_12_round_v2(t, diff=(0x211, 0xa04), neutral_bits=[10,11,12])
                 print('the number of surviving keys is ', len(survive_key))
                 break
 
-
 # Attack on 12 round Speck32/64
 neutral_bits = [11,14,15,20,21,22,0,1,3,4,5,6,23,24,26,27,28,29,30]
-key_recovery_on_12_round(t=10, diff=(0x211, 0xa04), neutral_bits=neutral_bits)
+key_recovery_on_12_round(t=100, diff=(0x211, 0xa04), neutral_bits=neutral_bits)
 # key_recovery_on_12_round_v2(t=100, diff=(0x211, 0xa04), neutral_bits=neutral_bits)
-
